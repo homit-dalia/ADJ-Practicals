@@ -18,6 +18,7 @@ public class result_set {
 
     String query = "Select * from Customers";
     ResultSet rs = stmt.executeQuery(query);
+    
     while (rs.next()) {
       if (rs.getInt("ID") == 5) {
         rs.updateInt("Salary", 11000);
